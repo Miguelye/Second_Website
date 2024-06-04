@@ -1,0 +1,103 @@
+
+header {
+    /*variables*/
+    --_animationStartAfter: 50vh;
+    --_animationDistance: 300px;
+    --_textColorStart: white;
+    --_textColorEnd: white;
+    --_surficeColorStart: black;
+    --_surficeColorEnd: hsl(0 50% 5% / 0.05);
+    --_logoAfterAnimation: none;
+
+
+    padding: 1.2rem 1rem;
+    margin-inline: auto;
+    margin-block: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 100vw;
+
+    width: var(--_headerWidth, auto);
+    height: 0px;
+
+    color: var(--_textColorStart);
+    background-color: var(--_surficeColorStart);
+
+    position: sticky;
+    z-index: 1000;
+    top: -5rem;
+
+    animation: stickyNav linear forwards;
+
+    @supports (animation-timeline: view())
+    {
+        backdrop-filter: blur(0.15rem);
+
+        animation-timeline: view();
+        animation-range-start: calc(100vh + var(--_animationStartAfter));
+        animation-range-end: calc(100vh + var(--_animationStartAfter) + var(--_animationDistance));
+    }
+
+    .butterflyLogo {
+        display: var(--_logoDisplay, block);
+        height: 2.5rem;
+    }
+
+    .name {
+           
+        font-size: 50px;
+        a{
+            color: inherit;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+    }
+
+    ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        a:hover,
+        a:focus
+        {
+            color: white;
+            text-decoration: underline;
+            text-decoration-thickness: 0.07lh;
+            text-underline-offset: 0.17lh;
+        }
+    }
+}
+
+@keyframes stickyNav {
+
+    0% {
+        --_headerWidth: fit-content;
+        --_logoDisplay: var(--_logoAfterAnimation);
+    }
+
+    100% {
+        --_headerWidth: fit-content;
+        --_logoDisplay: var(--_logoAfterAnimation);
+        width: fit-content;
+        top: 1rem;
+        color: var(--_textColorEnd);
+        background-color: var(--_surficeColorEnd);
+        box-shadow:
+            0 0 0.75rem var(--_surficeColorEnd) ;
+    }
+}

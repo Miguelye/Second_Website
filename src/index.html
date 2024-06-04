@@ -1,0 +1,94 @@
+<!-- This delcaration defines the document type and version of HTML(HTML 5)
+to ensure proper rendering in modern web browers-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Miguel Yepes</title>
+        <link rel="stylesheet" href="css/style.scss">
+        <meta charset="utf-8">
+        <meta name="viewport" contentcl="width=device=width, initial-scale=1">
+    </head>
+
+    <body id="main">
+        <header>
+            <a href="#main">
+                <img class="butterflyLogo" src="images/butterflyName.png" alt="butterfly logo">
+            </a> <!--add name to logo and a hyperlink-->
+            <nav> <!-- Tag that defines a set of navigation links for the website -->
+                <ul>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#art">Art</a></li>
+                    <li><a href="#gameDev">Game Dev</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section--main">
+            <article>
+                <p class="section--main--text">
+                    I bridge the gap between code and canvas!
+                    I'm a coder with a passion for art and design.
+                    I bring 3D worlds to life, craft stunning visuals,
+                    and write code that makes it all tick.
+                    Explore my projects and see how creativity meets code!
+                </p>
+                <figure>
+                    <img class="img--logo img--miguel-yepes" src="images/logo.png" alt="Miguel Yepes' logo" width="600"/>
+                    <canvas id="canvas1"></canvas>
+                </figure>
+            </article>
+            <div class="border">-------</div>
+        </section>
+
+
+        <section id="code" class="section--code">
+            <h2>Code</h2>
+            <img class="feature-img img--code" src="images/code.png" alt="code image" width="600"/>
+            <div class="border">-------</div>
+        </section>
+
+
+        <section id="art" class="section--art">
+            <h2>Art</h2>
+            <figure>
+                <img class="feature-img img--penguin" src="images/penguin.png" alt="penguin art" width="600"/>
+                <canvas id="canvas2"></canvas>
+            </figure>
+            <div class="border">-------</div>
+        </section>
+
+
+        <section id="gameDev" class="section--gameDev">
+            <h2>Game Dev</h2>
+            <img class="feature-img img--dungeon" src="images/dungeon.png" alt="dungeon picture" width="600"/>
+            <div class="border">-------</div>
+        </section>
+
+
+        <section id="contact" class="section--contact">
+            <div class="contact__inner">
+                <div class="addressColumn">
+                    <p class="addressInfo">
+                        Canada
+                        <br/>
+                        Edmonton, Alberta
+                    </p>
+                </div>
+                <div class="linksColumn">
+                    <a href="mailto:Miki@mail.com">email</a>
+                    <br/>
+                    <a href="https://instagram.com/" target="_blank" title="Opens in a new tab">instagram</a>
+                    <br/>
+                    <a href="https://youtube.com/" target="_blank" title="Opens in a new tab">youtube</a>
+                    <br/>
+                    <a href="https://github.com/" target="_blank" title="Opens in a new tab">github</a>
+                    <br/>
+                    <a href="https://linkedin.com/" target="_blank" title="Opens in a new tab">linkedin</a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+

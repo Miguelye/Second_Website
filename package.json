@@ -1,0 +1,17 @@
+{
+  "name": "second_website",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "npm run prebuild && parcel",
+    "build": "parcel build",
+    "prebuild": "rm -rf dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0"
+  }
+}

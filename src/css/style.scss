@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@import '_nav.scss';
+
+.img--logo {
+    position: relative;
+}
+
+.feature-img {
+    width: 600px;
+}
+
+section {
+    height: 100vh;
+}
