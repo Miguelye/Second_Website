@@ -54,7 +54,7 @@
     border-radius: 20px;
     font-size: 40px;
     top: 25%;
-    right: 1rem;
+    right: -30rem;
     z-index: 28;
 
 }
@@ -64,8 +64,8 @@
     width: 100%;
     height: 100%;
     top: -10rem;
-    z-index: 30;
-    background: url("../images/borderCodeArt.png") top center;
+    z-index: 34;
+    background: url("../images/border code-artv2.png") top center;
     background-repeat: repeat-x;
 
 }
@@ -88,19 +88,29 @@
 
 }
 
-.header--code,
 .text--code {
+
+    animation: stickyCodeText linear forwards;
+
+    @supports (animation-timeline: view())
+    {
+        animation-timeline: view();
+        animation-range-start: 150vh;
+        animation-range-end: 300vh;
+    }
+}
+
+.header--code {
 
     animation: stickyCodeHeader linear forwards;
 
     @supports (animation-timeline: view())
     {
         animation-timeline: view();
-        animation-range-start: 300vh;
-        animation-range-end: 500vh;
+        animation-range-start: 150vh;
+        animation-range-end: 300vh;
     }
 }
-
 
 @keyframes stickyCode {
 
@@ -114,11 +124,24 @@
 
 @keyframes stickyCodeHeader {
 
-    50% {
+    40%,
+    60% {
         left: 5rem;
     }
     100% {
         visibility: hidden;
         left:-19rem
+    }
+}
+
+@keyframes stickyCodeText {
+
+    45%,
+    65% {
+        right: 1rem;
+    }
+    100% {
+        visibility: hidden;
+        right: -30rem;
     }
 }
