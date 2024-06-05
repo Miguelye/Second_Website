@@ -1,0 +1,124 @@
+.section--code {
+
+    --_opacityCodeStart: 1;
+    --_opacityCodeEnd: 0;
+    --_visibilityCode: visible;
+
+    position: relative;
+    width: 100vw;
+    height: 150vh;
+    z-index: 30;
+}
+
+.div--boder-code {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -1rem;
+    z-index: 30;
+    background: url("../images/borderCode.png") top center;
+    background-repeat: repeat-x;
+}
+
+.header--code{
+    position: fixed;
+    top: 20%;
+    left: -18rem;
+    z-index: 29;
+
+    a {
+        color: black;
+        -webkit-text-stroke: 2px white;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    a:hover,
+    a:focus
+    {
+        color: invert($color: #000000);
+        -webkit-text-stroke: 4px rgb(0, 0, 0);
+    }
+}
+
+.text--code {
+    
+    position: fixed;
+    width: 50%;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 3.0vw;
+    border-radius: 20px;
+    font-size: 40px;
+    top: 25%;
+    right: 1rem;
+    z-index: 28;
+
+}
+
+.div--border--code-art {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -10rem;
+    z-index: 30;
+    background: url("../images/borderCodeArt.png") top center;
+    background-repeat: repeat-x;
+
+}
+
+.bg--img--code {
+    position: fixed;
+    top: 1rem;
+    left: 0rem;
+    width: 100%;
+    z-index: 28;
+
+    animation: stickyCode linear forwards;
+
+    @supports (animation-timeline: view())
+    {
+        animation-timeline: view();
+        animation-range-start: 330vh;
+        animation-range-end: 500vh;
+    }
+
+}
+
+.header--code,
+.text--code {
+
+    animation: stickyCodeHeader linear forwards;
+
+    @supports (animation-timeline: view())
+    {
+        animation-timeline: view();
+        animation-range-start: 300vh;
+        animation-range-end: 500vh;
+    }
+}
+
+
+@keyframes stickyCode {
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        width: 100%;
+    }
+}
+
+@keyframes stickyCodeHeader {
+
+    50% {
+        left: 5rem;
+    }
+    100% {
+        visibility: hidden;
+        left:-19rem
+    }
+}
