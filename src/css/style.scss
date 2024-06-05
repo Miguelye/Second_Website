@@ -6,11 +6,31 @@ html, body {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
     scroll-behavior: smooth;
+}
 
+:root {
+    --_fontheader: 'Franklin Gothic Heavy';
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
 }
 
 main {
-    overflow-x: hidden;
+    position: relative;
+}
+
+h2 {
+    position: relative;
+    align-items: center;
+    font-family: var(--_fontheader);
+    font-size: 10vw;
+    text-shadow: 2px 2px 5px black,
+    5px 5px 70px lightgray;
+    color: black;
+    -webkit-text-stroke: 2px white;
+    z-index: 0;
 }
 
 .section--main {
@@ -18,17 +38,19 @@ main {
     position: relative;
     display: flex;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
 
         h1 {
             position: absolute;
             align-items: center;
-            font-family: 'Franklin Gothic Heavy';
+            font-family: var(--_fontheader);
             font-size: 10vw;
-            top: 0.1rem;
+            text-shadow: 2px 2px 5px black,
+            5px 5px 70px lightgray;
+            top: -3rem;
             left: 1rem;
             color: black;
-            -webkit-text-stroke: 1px white;
+            -webkit-text-stroke: 2px white;
         }
 
         .background--colombia {
@@ -39,10 +61,10 @@ main {
 
     .img--logo {
         position: absolute;
-        width: 25rem;
+        width: 40vw;
         top: 15rem;
         left: 36rem;
-        z-index: 20;
+        z-index: 1000;
     }
 
     .section--main--text {
@@ -56,7 +78,7 @@ main {
         width: 50%;
         left: 1rem;
         font-size: 40px;
-        z-index: 2;
+        z-index: 999;
     }
 }
 
@@ -65,56 +87,82 @@ main {
     width: 100%;
     height: 1300px;
     background-color: rgb(0, 0, 0);
-    z-index: 1;
+    z-index: 998;
 }
 
 @import '_nav.scss';
 
-figure {
-    padding: 0;
-    margin: 0;
+.border {
+    pointer-events: none;
 }
 
 .section--code {
-    //position: relative;
+    position: relative;
     width: 100vw;
-    height: 80vh;
-    perspective: 1px;
-    perspective-origin: center center;
-    overflow-x: hidden;
+    height: 150vh;
     z-index: 2;
 }
 
-.background--code {
+.div--boder-code {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -1rem;
+    z-index: 1;
+    background: url("../images/borderCode.png") top center;
+    background-repeat: repeat-x;
+}
 
-    //position: relative;
-    transform-style: preserve-3d;
-    height: 100vh;
-    top: -14rem;
+.header--code{
+    position: fixed;
+    top: 20%;
+    left: 5rem;
+    z-index: 0;
 
-    .border--img {
-        //position: relative;
-        width: 100%;
-        background-position: bottom center;
-        background-size: cover;
-        background-repeat: repeat-x;
-        top: 1rem;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        z-index: 4;
+    a {
+        color: black;
+        -webkit-text-stroke: 2px white;
+        text-decoration: none;
+        font-weight: 500;
     }
-
-    .border--code-blur {
-        //position: absolute;
-        //width: 100%;
-        //height: auto;
-        //top: 1rem;
-        //left: 0px;
-        //z-index: 2;
-        transform: translateZ(-10px) scale(1);
+    
+    a:hover,
+    a:focus
+    {
+        color: invert($color: #000000);
+        -webkit-text-stroke: 4px rgb(0, 0, 0);
     }
 }
+
+.text--code {
+    
+    position: fixed;
+    width: 50%;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 3.0vw;
+    border-radius: 20px;
+    font-size: 40px;
+    top: 25%;
+    right: 1rem;
+    z-index: 0;
+
+}
+
+.div--border--code-art {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -10rem;
+    z-index: 1;
+    background: url("../images/borderCodeArt.png") top center;
+    background-repeat: repeat-x;
+
+}
+
 
 .background--img {
     position: fixed;
@@ -126,8 +174,9 @@ figure {
     z-index: 0;
 }
 
-
 .feature-img {
+    position: relative;
     width: 600px;
 }
+
 

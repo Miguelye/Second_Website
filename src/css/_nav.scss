@@ -10,7 +10,7 @@ header {
     --_logoAfterAnimation: none;
 
 
-    padding: 1.2rem 1rem;
+    padding: 1.5rem 1rem;
     margin-inline: auto;
     margin-block: 0rem;
     display: flex;
@@ -26,8 +26,8 @@ header {
     background-color: var(--_surficeColorStart);
 
     position: sticky;
-    z-index: 1000;
-    top: -5rem;
+    z-index: 1001;
+    top: -7rem;
 
     animation: stickyNav linear forwards;
 
