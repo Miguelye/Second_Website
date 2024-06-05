@@ -5,13 +5,13 @@ to ensure proper rendering in modern web browers-->
     <head>
         <title>Miguel Yepes</title>
         <link rel="stylesheet" href="css/style.scss">
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" contentcl="width=device=width, initial-scale=1">
     </head>
 
-    <body id="main">
+    <body id="mainPage">
         <header>
-            <a href="#main">
+            <a href="#mainPage">
                 <img class="butterflyLogo" src="images/butterflyName.png" alt="butterfly logo">
             </a> <!--add name to logo and a hyperlink-->
             <nav> <!-- Tag that defines a set of navigation links for the website -->
@@ -25,44 +25,56 @@ to ensure proper rendering in modern web browers-->
             </nav>
         </header>
 
-        <section class="section--main">
-            <article>
-                <p class="section--main--text">
-                    I bridge the gap between code and canvas!
-                    I'm a coder with a passion for art and design.
-                    I bring 3D worlds to life, craft stunning visuals,
-                    and write code that makes it all tick.
-                    Explore my projects and see how creativity meets code!
-                </p>
-                <figure>
-                    <img class="img--logo img--miguel-yepes" src="images/logo.png" alt="Miguel Yepes' logo" width="600"/>
-                    <canvas id="canvas1"></canvas>
-                </figure>
-            </article>
-            <div class="border">-------</div>
+        <main>
+            <section class="section--main">
+                <div class="black-square"></div>
+                <div class="div--top-background">
+                    <img class="background--colombia" src="images/backgroundColombia.png" atd="background colombia">
+                    <h1>Video Game <br/> Developer</h1>
+                </div>
+
+                <article>
+                    <p class="section--main--text">
+                        I bridge the gap between code and canvas!
+                        I'm a coder with a passion for art and design.
+                        I bring 3D worlds to life, craft stunning visuals,
+                        and write code that makes it all tick.
+                        Explore my projects and see how creativity meets code!
+                    </p>
+                    <figure>
+                        <img class="feature-img img--logo img--miguel-yepes" src="images/logo.png" alt="Miguel Yepes' logo"/>
+                        <canvas id="canvas1"></canvas>
+                    </figure>
+                </article>
         </section>
 
-
+        <div>
+            <img class="background--img img--code" src="images/fractal.png" alt="code image"/>
+        </div>
+        
         <section id="code" class="section--code">
+            <div class="background--code" id="parallax0">
+                <img class="border--img border--code" src="images/borderCode.png" alt="border code image"/>
+                <img class="border--img border--code-blur slow--image" src="images/borderCodeBlur.png" alt="border code image"/>
+            </div>
             <h2>Code</h2>
-            <img class="feature-img img--code" src="images/code.png" alt="code image" width="600"/>
             <div class="border">-------</div>
         </section>
 
 
         <section id="art" class="section--art">
             <h2>Art</h2>
-            <figure>
-                <img class="feature-img img--penguin" src="images/penguin.png" alt="penguin art" width="600"/>
-                <canvas id="canvas2"></canvas>
-            </figure>
+                <figure>
+                    <img class="feature-img img--penguin" src="images/penguin.png" alt="penguin art"/>
+                    <canvas id="canvas2"></canvas>
+                </figure>
             <div class="border">-------</div>
         </section>
 
 
         <section id="gameDev" class="section--gameDev">
             <h2>Game Dev</h2>
-            <img class="feature-img img--dungeon" src="images/dungeon.png" alt="dungeon picture" width="600"/>
+            <img class="feature-img img--dungeon" src="images/dungeon.png" alt="dungeon picture"/>
             <div class="border">-------</div>
         </section>
 
@@ -89,6 +101,23 @@ to ensure proper rendering in modern web browers-->
                 </div>
             </div>
         </section>
+        </main>
+
+        <script>
+            /*            
+            const borderCodeBlur = document.querySelector('.border--code-blur');
+
+            window.addEventListener('scroll', function() {
+                const scrollY = window.scrollY; //Get the current scroll position on the Y-Axis
+                const speed = 0.5; // value to control the slow-motion
+                const borderCodeBlurMovement = scrollY * speed; //calculate the movement
+
+                console.log('Calculated movement:', borderCodeBlurMovement);
+                borderCodeBlur.style.transform = 'translateY(${borderCodeBlurMovement}px)';
+            });*/
+
+        </script>
+        
     </body>
 </html>
 
