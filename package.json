@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npm run prebuild && parcel",
     "build": "parcel build",
-    "prebuild": "rm -rf dist"
+    "prebuild": "rem -rf dist"
   },
   "author": "",
   "license": "ISC",

@@ -92,8 +92,6 @@ h2 {
     position: fixed;
     width: 50%;
     z-index: 0;
-    flex-direction: column;
-    justify-content: center;
     flex: 1;
     padding: 3.0vw;
     border-radius: 20px;
@@ -102,6 +100,15 @@ h2 {
     right: -30rem;
     z-index: 28;
     color: aliceblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 120px;
+    background: transparent;
+    backdrop-filter: blur(0.15rem);
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 1px;
 
     animation: stickyGamdevText linear forwards;
 
@@ -114,21 +121,10 @@ h2 {
 
 }
 
-.div--border--art-gamedev {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 45rem;
-    z-index: 34;
-    background: url("../images/borderTopGameDev.png") top center;
-    background-repeat: repeat-x;
-
-}
-
 .div--border--gamedev-contact {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 40%;
     top: 40rem;
     z-index: 34;
     background: url("../images/borderBottomGameDev.png") top center;
@@ -213,11 +209,3 @@ h2 {
 }
 
 //General
-
-.text {
-    display: flex;
-    background: transparent;
-    backdrop-filter: blur(0.15rem);
-    -webkit-text-stroke: white;
-    -webkit-text-stroke-width: 1px;
-}
