@@ -1,6 +1,10 @@
 .section--gamedev {
+    position: relative;
+    flex-direction: column;
     height: 150vh;
     z-index: 20;
+    display: flex;
+    align-items: flex-start;
 }
 
 .header--gamedev{
@@ -68,15 +72,7 @@
 
 }
 
-.div--border--gamedev-contact {
-    position: relative;
-    width: 100%;
-    height: 40%;
-    top: 40rem;
-    z-index: 34;
-    background: url("../images/borderBottomGameDev.png") top center;
-    background-repeat: repeat-x;
-}
+
 
 .bg--img--gamedev {
     position: fixed;
@@ -92,14 +88,14 @@
 @keyframes fixedGamedevHeader {
 
     17%{
-        left: 2rem;
+        left: 2vw;
         top: 27%;
     }
     30% {
         top: 27%;
-        left: 2rem;
+        left: 2vw;
     }
-    80% {
+    50% {
         left: -40rem;
     }
 }
@@ -107,14 +103,14 @@
 @keyframes fixedGamdevText {
 
     21%{
-        right: 0rem;
+        right: 0vw;
         top: 27%;
     }
     34.5% {
-        right: 0rem;
+        right: 0vw;
         top: 27%;
     }
-    60% {
-        right: -37rem;
+    50% {
+        right: -45rem;
     }
 }
