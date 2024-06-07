@@ -1,0 +1,56 @@
+.section--main {
+    .div--top-background {
+    position: relative;
+    display: flex;
+    width: 100%;
+    z-index: 1000;
+
+        h1 {
+            position: absolute;
+            align-items: center;
+            font-family: var(--_fontheader);
+            font-size: 10vw;
+            text-shadow: 2px 2px 5px black,
+            5px 5px 70px lightgray;
+            top: -3rem;
+            left: 1rem;
+            color: black;
+            -webkit-text-stroke: 2px white;
+        }
+
+        .background--colombia {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .img--logo {
+        position: absolute;
+        width: 40vw;
+        top: 15rem;
+        left: 36rem;
+        z-index: 1000;
+    }
+
+    .section--main--text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        padding: 3.0vw;
+        border-radius: 20px;
+        width: 50%;
+        left: 1rem;
+        font-size: 40px;
+        z-index: 999;
+    }
+}
+
+.black-square {
+    position: absolute;
+    width: 100%;
+    height: 1300px;
+    background-color: rgb(0, 0, 0);
+    z-index: 998;
+}
