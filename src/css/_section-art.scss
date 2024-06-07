@@ -1,71 +1,95 @@
 .section--art {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     position: relative;
-    width: 100vw;
     height: 150vh;
     z-index: 31;
 }
 
-.bg--img--art {
-    position: relative;
-    width: 100%;
+.art-group {
+
     height: 100%;
-    top: -50rem;
-    z-index: 31;
-    background: url("../images/bgArt1.jpg") top center;
-    background-size: cover;
-}
-
-.header--art{
-    position: absolute;
-    top: 20%;
-    left: 5rem;
-    z-index: 33;
-
-    a {
-        color: black;
-        -webkit-text-stroke: 2px white;
-        text-decoration: none;
-        font-weight: 500;
-    }
-    
-    a:hover,
-    a:focus
-    {
-        color: invert($color: #000000);
-        -webkit-text-stroke: 4px rgb(0, 0, 0);
-    }
-}
-
-.text--art {
-    
-    position: absolute;
-    width: 50%;
-    z-index: 0;
-    flex: 1;
-    padding: 3.0vw;
-    border-radius: 20px;
-    font-size: 40px;
-    top: 25%;
-    right: 1rem;
-    z-index: 33;
-    color: black;
-
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 120px;
-    background: transparent;
-    backdrop-filter: blur(0.15rem);
-    -webkit-text-stroke: black;
-    -webkit-text-stroke-width: 1px;
+    align-items: flex-start;
+    flex: 1;
+
+    .header--art{
+        top: 20%;
+        padding-left: 5rem;
+        left: 5rem;
+        z-index: 33;
+
+        a {
+            color: black;
+            -webkit-text-stroke: 2px white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        a:hover,
+        a:focus
+        {
+            color: invert($color: #000000);
+            -webkit-text-stroke: 4px rgb(0, 0, 0);
+        }
+    }
+
+    .div--border--code-art {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0rem;
+        z-index: 34;
+        background: url("../images/border code-artv2.png") top center;
+        background-repeat: repeat-x;
+    }
+
+    .bg--img--art {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: -23rem;
+        z-index: 31;
+        background: url("../images/bgArt1.jpg") top center;
+        background-size: cover;
+    }
+
+
+
+    .text--art {
+        
+        position: absolute;
+        width: 50%;
+        z-index: 0;
+        flex: 1;
+        padding: 3.0vw;
+        border-radius: 20px;
+        font-size: 40px;
+        top: 25%;
+        right: 1rem;
+        z-index: 33;
+        color: black;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 120px;
+        background: transparent;
+        backdrop-filter: blur(0.15rem);
+        -webkit-text-stroke: black;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .div--border--art-gamedev {
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        top: 40rem;
+        z-index: 34;
+        background: url("../images/borderTopGameDev.png") top center;
+        background-repeat: repeat-x;
+    }
 }
 
-.div--border--art-gamedev {
-    position: absolute;
-    width: 100%;
-    height: 40%;
-    top: 45rem;
-    z-index: 34;
-    background: url("../images/borderTopGameDev.png") top center;
-    background-repeat: repeat-x;
-}

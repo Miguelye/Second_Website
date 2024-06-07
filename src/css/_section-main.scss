@@ -1,13 +1,20 @@
 .section--main {
+    z-index: 999;
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    background: black;
+
     .div--top-background {
+    height: 100%;
     position: relative;
     display: flex;
-    width: 100%;
+    align-items: flex-start;
+    flex: 1;
     z-index: 1000;
 
         h1 {
-            position: absolute;
-            align-items: center;
             font-family: var(--_fontheader);
             font-size: 10vw;
             text-shadow: 2px 2px 5px black,
@@ -16,41 +23,38 @@
             left: 1rem;
             color: black;
             -webkit-text-stroke: 2px white;
+            z-index: 1002;
         }
 
         .background--colombia {
+            position: absolute;
             width: 100%;
             height: auto;
+            z-index: 1001;
+        }
+
+        .img--logo {
+            width: 35vw;
+            max-width: 100%;
+            top: -4rem;
+            left: 1vh;
+            z-index: 1002;
         }
     }
 
-    .img--logo {
-        position: absolute;
-        width: 40vw;
-        top: 15rem;
-        left: 36rem;
-        z-index: 1000;
-    }
 
     .section--main--text {
-        position: relative;
-        display: flex;
+        z-index: 1000;
         flex-direction: column;
-        justify-content: center;
         flex: 1;
-        padding: 3.0vw;
-        border-radius: 20px;
+        justify-content: center;
         width: 50%;
+        margin-left: 2rem;
+        padding: 3vw;
+        display: flex;
+        position: relative;
+        top: -3rem;
         left: 1rem;
-        font-size: 40px;
-        z-index: 999;
     }
 }
 
-.black-square {
-    position: absolute;
-    width: 100%;
-    height: 1300px;
-    background-color: rgb(0, 0, 0);
-    z-index: 998;
-}

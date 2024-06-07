@@ -1,0 +1,120 @@
+.section--gamedev {
+    height: 150vh;
+    z-index: 20;
+}
+
+.header--gamedev{
+    position: fixed;
+    top: 27%;
+    left: -31rem;
+    z-index: 29;
+    font-size: 8vw;
+
+    a {
+        color: black;
+        -webkit-text-stroke: 2px white;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    a:hover,
+    a:focus
+    {
+        color: invert($color: #000000);
+        -webkit-text-stroke: 4px rgb(0, 0, 0);
+    }
+
+    animation: fixedGamedevHeader linear forwards;
+
+    @supports (animation-timeline: view())
+    {
+        animation-timeline: view();
+        animation-range-start: 475vh;
+        animation-range-end: 700vh;
+    }
+}
+
+.text--gamedev {
+    
+    position: fixed;
+    width: 50%;
+    z-index: 0;
+    flex: 1;
+    padding: 3.0vw;
+    border-radius: 20px;
+    font-size: 40px;
+    top: 25%;
+    right: -30rem;
+    z-index: 27;
+    color: aliceblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 120px;
+    background: transparent;
+    backdrop-filter: blur(0.15rem);
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 1px;
+
+    animation: fixedGamdevText linear forwards;
+
+    @supports (animation-timeline: view())
+    {
+        animation-timeline: view();
+        animation-range-start: 475vh;
+        animation-range-end: 700vh;
+    }
+
+}
+
+.div--border--gamedev-contact {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    top: 40rem;
+    z-index: 34;
+    background: url("../images/borderBottomGameDev.png") top center;
+    background-repeat: repeat-x;
+}
+
+.bg--img--gamedev {
+    position: fixed;
+    width: 100%;
+    height: 100svh;
+    top: 0rem;
+    z-index: 1;
+    background: url("../images/backgroundGamedev.png") top center;
+    background-repeat: no-repeat;
+}
+
+
+@keyframes fixedGamedevHeader {
+
+    17%{
+        left: 2rem;
+        top: 27%;
+    }
+    30% {
+        top: 27%;
+        left: 2rem;
+    }
+    80% {
+        left: -40rem;
+    }
+}
+
+@keyframes fixedGamdevText {
+
+    21%{
+        right: 0rem;
+        top: 27%;
+    }
+    34.5% {
+        right: 0rem;
+        top: 27%;
+    }
+    60% {
+        right: -37rem;
+    }
+}

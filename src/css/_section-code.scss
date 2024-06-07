@@ -1,115 +1,98 @@
 .section--code {
-    position: relative;
-    width: 100vw;
     height: 150vh;
-    z-index: 30;
-}
-
-.div--boder-code {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: -1rem;
-    z-index: 31;
-    background: url("../images/borderCode.png") top center;
-    background-repeat: repeat-x;
-}
-
-.header--code{
-    position: fixed;
-    top: 20%;
-    left: -18rem;
-    z-index: 29;
-
-    a {
-        color: black;
-        -webkit-text-stroke: 2px white;
-        text-decoration: none;
-        font-weight: 500;
-    }
-    
-    a:hover,
-    a:focus
-    {
-        color: invert($color: #000000);
-        -webkit-text-stroke: 4px rgb(0, 0, 0);
-    }
-}
-
-.text--code {
-    
-    position: fixed;
-    width: 50%;
-    z-index: 0;
-    flex: 1;
-    padding: 3.0vw;
-    border-radius: 20px;
-    font-size: 40px;
-    top: 25%;
-    right: -30rem;
-    z-index: 28;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    border-radius: 120px;
-    background: transparent;
-    backdrop-filter: blur(0.15rem);
-    -webkit-text-stroke: white;
-    -webkit-text-stroke-width: 1px;
-
-}
-
-.div--border--code-art {
     position: relative;
-    width: 100%;
-    height: 100%;
-    top: -10rem;
-    z-index: 34;
-    background: url("../images/border code-artv2.png") top center;
-    background-repeat: repeat-x;
+    z-index: 30;
+    
+    .bg--img--code {
+        position: fixed;
+        top: 1rem;
+        left: 0rem;
+        width: 100%;
+        z-index: 28;
 
-}
+        animation: stickyCode linear forwards;
 
-.bg--img--code {
-    position: fixed;
-    top: 1rem;
-    left: 0rem;
-    width: 100%;
-    z-index: 28;
-
-    animation: stickyCode linear forwards;
-
-    @supports (animation-timeline: view())
-    {
-        animation-timeline: view();
-        animation-range-start: 330vh;
-        animation-range-end: 500vh;
+        @supports (animation-timeline: view())
+        {
+            animation-timeline: view();
+            animation-range-start: 330vh;
+            animation-range-end: 500vh;
+        }
     }
 
-}
-
-.text--code {
-
-    animation: stickyCodeText linear forwards;
-
-    @supports (animation-timeline: view())
-    {
-        animation-timeline: view();
-        animation-range-start: 150vh;
-        animation-range-end: 300vh;
+    .div--boder-code {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: -1rem;
+        z-index: 31;
+        background: url("../images/borderCode.png") top center;
+        background-repeat: repeat-x;
     }
-}
 
-.header--code {
+    .header--code{
+        position: fixed;
+        top: 20%;
+        left: -18rem;
+        z-index: 29;
+    
+        a {
+            color: black;
+            -webkit-text-stroke: 2px white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        a:hover,
+        a:focus
+        {
+            color: invert($color: #000000);
+            -webkit-text-stroke: 4px rgb(0, 0, 0);
+        }
 
-    animation: stickyCodeHeader linear forwards;
+        animation: stickyCodeHeader linear forwards;
 
-    @supports (animation-timeline: view())
-    {
-        animation-timeline: view();
-        animation-range-start: 150vh;
-        animation-range-end: 300vh;
+        @supports (animation-timeline: view())
+        {
+            animation-timeline: view();
+            animation-range-start: 150vh;
+            animation-range-end: 300vh;
+        }
+    }
+
+    .text--code {
+    
+        position: fixed;
+        width: 50%;
+        z-index: 0;
+        flex: 1;
+        padding: 3.0vw;
+        border-radius: 20px;
+        font-size: 40px;
+        top: 25%;
+        right: -30rem;
+        z-index: 28;
+    
+        //to be improve
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 120px;
+        background: transparent;
+        backdrop-filter: blur(0.15rem);
+        -webkit-text-stroke: white;
+        -webkit-text-stroke-width: 1px;
+
+        animation: stickyCodeText linear forwards;
+
+        @supports (animation-timeline: view())
+        {
+            animation-timeline: view();
+            animation-range-start: 150vh;
+            animation-range-end: 300vh;
+        }
     }
 }
 

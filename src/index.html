@@ -5,6 +5,7 @@ to ensure proper rendering in modern web browers-->
     <head>
         <title>Miguel Yepes</title>
         <link rel="stylesheet" href="css/style.scss">
+        <link rel="stylesheet" href="css/normalize.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device=width, initial-scale=1">
     </head>
@@ -29,30 +30,23 @@ to ensure proper rendering in modern web browers-->
         
         <main>
             <section class="section--main">
-                <div class="black-square"></div>
                 <div class="div--top-background">
                     <img class="background--colombia" src="images/backgroundColombia.png" atd="background colombia">
                     <h1>Video Game <br/> Developer</h1>
-                </div>
-
-                <article>
+                    <img class="feature-img img--logo img--miguel-yepes" src="images/logo.png" alt="Miguel Yepes' logo"/>
+                    </div>
                     <p class="section--main--text text">
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                         nisi ut aliquip ex ea commodo consequat.atur."
                     </p>
-                    <figure>
-                        <img class="feature-img img--logo img--miguel-yepes" src="images/logo.png" alt="Miguel Yepes' logo"/>
-                        <canvas id="canvas1"></canvas>
-                    </figure>
-                </article>
             </section>
-
-
+                            
+                            
             <section id="code" class="section--code">
                 <div>
-                 <img class="bg--img--code" src="images/lines.jpg" alt="code image"/>
+                    <img class="bg--img--code" src="images/lines.jpg" alt="code image"/>
                 </div>
                 <div class="div--boder-code border"></div>
                 <h2 class="header--code"><a href="sections/code.html">Code</a></h2>
@@ -66,17 +60,18 @@ to ensure proper rendering in modern web browers-->
 
             
             <section id="art" class="section--art">
-                <div class="div--border--code-art border"></div>
-                <!-- -->
-                <div class="bg--img--art"></div>
-                <h2 class="header--art"><a href="sections/art.html">Art</a></h2>
-                <p class="text--art text">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat.atur."
-                </p>
-                <div class="div--border--art-gamedev border"></div>
+                <div class="art-group"> 
+                    <div class="div--border--code-art border"></div>
+                    <div class="bg--img--art"></div>
+                    <h2 class="header--art"><a href="sections/art.html">Art</a></h2>
+                    <p class="text--art text">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat.atur."
+                    </p>
+                    <div class="div--border--art-gamedev border"></div>
+                </div>
             </section>
 
 
