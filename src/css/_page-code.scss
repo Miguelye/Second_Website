@@ -1,0 +1,97 @@
+.main-page {
+    max-width: 100vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    z-index: 0;
+    position: relative;
+    background-color: black;
+}
+
+.background-code
+{
+    position: fixed;
+    width: 100%;
+    height: 100svh;
+    left:1rem;
+    z-index: 0;
+    background: url("../images/background-code.png") top center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    opacity: .5;
+}
+
+.section-code-page {
+    z-index: 3;
+    text-align: left;
+    width: 100vw;
+    margin-top: 89px;
+    padding: 1rem;
+    display: flex;
+    position: relative;
+
+    h3 {
+        line-height: 1.5rem;
+    }
+    p {
+        line-height: 1rem;
+        font-size: 26px;
+    }
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.code-description {
+    z-index: 3;
+    display: inline-block;
+    border-radius: 80px;
+    background: transparent;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+    padding-right: 2rem;
+    backdrop-filter: blur(0.15rem);
+    position: relative;
+}
+
+.section-code-projects {
+    width: 100vw;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    z-index: 3;
+    display: block;
+    left: -2vw;
+
+    ul {
+        display: inline-flex;
+    }
+
+    li {
+        list-style: none;
+        position: relative;
+        margin-right: 1rem;
+    }
+}
+
+.section-code-projects h3{
+    padding-left: 35vw;
+}
+
+.github-link {
+    display: flex;
+}
+
+.github-logo
+{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 1.5rem;
+    left: 1rem;
+
+}
